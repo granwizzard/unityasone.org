@@ -1,0 +1,12 @@
+/* styles.css */
+
+#text-container {
+    position: absolute;
+    top: 70%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 1; /* Garante que o texto esteja à frente do vídeo */
+    color: gold;
+    font-size: 24px;
+    font-family: Arial, sans-serif;
+}
