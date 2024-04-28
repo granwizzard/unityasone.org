@@ -12,14 +12,14 @@ var video2 = createVideoElement();
 
 var videoTexture1 = new THREE.VideoTexture(video1);
 var videoMaterial1 = new THREE.MeshBasicMaterial({ map: videoTexture1, side: THREE.DoubleSide });
-var planeGeometry1 = new THREE.PlaneGeometry(32, 18); 
+var planeGeometry1 = new THREE.PlaneGeometry(36, 18); 
 var plane1 = new THREE.Mesh(planeGeometry1, videoMaterial1);
 plane1.position.z = -5;
 scene.add(plane1);
 
 var videoTexture2 = new THREE.VideoTexture(video2);
 var videoMaterial2 = new THREE.MeshBasicMaterial({ map: videoTexture2, side: THREE.DoubleSide });
-var planeGeometry2 = new THREE.PlaneGeometry(32, 18); 
+var planeGeometry2 = new THREE.PlaneGeometry(36, 18); 
 var plane2 = new THREE.Mesh(planeGeometry2, videoMaterial2);
 plane2.position.z = -5;
 scene.add(plane2);
