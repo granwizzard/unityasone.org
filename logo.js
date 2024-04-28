@@ -2,6 +2,11 @@ var scene = new THREE.Scene();
 var camera = new THREE.PerspectiveCamera(75, window.innerWidth / window.innerHeight, 0.1, 1000);
 var renderer = new THREE.WebGLRenderer({alpha: true});
 renderer.setClearColor(0x000000, 0);
+
+// Crea una luz ambiental
+var ambientLight = new THREE.AmbientLight(0xffffff, 2); // Color, Intensidad
+scene.add(ambientLight);
+
 // Configura a posição da orientação da camara
 camera.position.set(0, 0, 5); // Posiciona a camara a 5 unidades no eixo Z
 renderer.setSize(window.innerWidth, window.innerHeight);
